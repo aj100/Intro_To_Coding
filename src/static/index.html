@@ -1,0 +1,50 @@
+<html>
+<head>
+  <title>Calculator</title>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.1.1/foundation.min.css">
+</head>
+<body ng-app="calculatorApp">
+  <div ng-controller="calculatorCtrl" style="margin: 15px;">
+  	
+  	<h2>My Cool and Awesome Calculator!</h2>
+
+  	<div style="width:500px">
+  	  <div class="row">
+  	  	<div class="medium-4 columns"><input type="text" style="width:165px; background-color:white;" readonly="" ng-model="model.currentDisplay"/> </div>
+  	  	<div class="small-1 columns"></div>
+  	  </div>
+	  <div class="row" style="position:relative; bottom:10px">
+  	    <div class="small-1 columns"><a class="button" ng-click="onNumberPress(1)">1</a></div>
+  	    <div class="small-1 columns"><a class="button" ng-click="onNumberPress(2)">2</a></div>
+  	    <div class="small-1 columns"><a class="button" ng-click="onNumberPress(3)">3</a></div>
+  	    <div class="small-1 columns"><a class="button secondary">+</a></div>
+  	    <div class="small-1 columns"></div>
+	  </div>
+	  <div class="row" style="position:relative; bottom:22px">
+  	    <div class="small-1 columns"><a class="button" ng-click="onNumberPress(4)">4</a></div>
+  	    <div class="small-1 columns"><a class="button" ng-click="onNumberPress(5)">5</a></div>
+  	    <div class="small-1 columns"><a class="button" ng-click="onNumberPress(6)">6</a></div>
+  	    <div class="small-1 columns"><a class="button secondary" style="width:39px">-</a></div>
+  	    <div class="small-1 columns"></div>
+	  </div>
+  	  <div class="row" style="position:relative; bottom:34px">
+  	    <div class="small-1 columns"><a class="button" ng-click="onNumberPress(7)">7</a></div>
+  	    <div class="small-1 columns"><a class="button" ng-click="onNumberPress(8)">8</a></div>
+  	    <div class="small-1 columns"><a class="button" ng-click="onNumberPress(9)">9</a></div>
+  	    <div class="small-1 columns"><a class="button secondary" style="width:38px">*</a></div>
+  	    <div class="small-1 columns"></div>
+	  </div>
+	  <div class="row" style="position:relative; bottom:46px">
+  	    <div class="small-1 columns"><a class="button secondary" ng-click="clearClick()">C</a></div>
+  	    <div class="small-1 columns"><a class="button" ng-click="onNumberPress(0)">0</a></div>
+  	    <div class="small-1 columns"><a class="button secondary">=</a></div>
+  	    <div class="small-1 columns"><a class="button secondary" style="width:38px">/</a></div>
+  	    <div class="small-1 columns"></div>
+	  </div>
+	</div>
+
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
