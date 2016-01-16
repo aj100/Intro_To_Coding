@@ -6,6 +6,9 @@ def get_args():
   num2 = request.args.get("num2")
   return (int(num1), int(num2))
 
+def result(num):
+  return jsonify(result = num)
+
 @app.route("/")
 def index():
 	return app.send_static_file('index.html')
@@ -14,12 +17,18 @@ def index():
 def static_files(path):
   return app.send_static_file(path)
 
+##### Business logic
 ##################################################
 
 @app.route("/add/")
 def add():
   a, b = get_args()
-  return jsonify(result = a+b)
+  return result(a+b)
+
+@app.route("/subtract/")
+def subtract():
+  a, b = get_args()
+  return result(a-b)
 
 ##################################################
 

@@ -17,28 +17,28 @@
   	    <div class="small-1 columns"><a class="button" ng-click="onNumberPress(1)">1</a></div>
   	    <div class="small-1 columns"><a class="button" ng-click="onNumberPress(2)">2</a></div>
   	    <div class="small-1 columns"><a class="button" ng-click="onNumberPress(3)">3</a></div>
-  	    <div class="small-1 columns"><a class="button secondary">+</a></div>
+  	    <div class="small-1 columns"><a class="button secondary" ng-click="opPress('add')">+</a></div>
   	    <div class="small-1 columns"></div>
 	  </div>
 	  <div class="row" style="position:relative; bottom:22px">
   	    <div class="small-1 columns"><a class="button" ng-click="onNumberPress(4)">4</a></div>
   	    <div class="small-1 columns"><a class="button" ng-click="onNumberPress(5)">5</a></div>
   	    <div class="small-1 columns"><a class="button" ng-click="onNumberPress(6)">6</a></div>
-  	    <div class="small-1 columns"><a class="button secondary" style="width:39px">-</a></div>
+  	    <div class="small-1 columns"><a class="button secondary" style="width:39px" ng-click="opPress('subtract')">-</a></div>
   	    <div class="small-1 columns"></div>
 	  </div>
   	  <div class="row" style="position:relative; bottom:34px">
   	    <div class="small-1 columns"><a class="button" ng-click="onNumberPress(7)">7</a></div>
   	    <div class="small-1 columns"><a class="button" ng-click="onNumberPress(8)">8</a></div>
   	    <div class="small-1 columns"><a class="button" ng-click="onNumberPress(9)">9</a></div>
-  	    <div class="small-1 columns"><a class="button secondary" style="width:38px">*</a></div>
+  	    <div class="small-1 columns"><a class="button secondary" style="width:38px" ng-click="opPress('multiply')">*</a></div>
   	    <div class="small-1 columns"></div>
 	  </div>
 	  <div class="row" style="position:relative; bottom:46px">
-  	    <div class="small-1 columns"><a class="button secondary" ng-click="clearClick()">C</a></div>
+  	    <div class="small-1 columns"><a class="button secondary" ng-click="clear()">C</a></div>
   	    <div class="small-1 columns"><a class="button" ng-click="onNumberPress(0)">0</a></div>
-  	    <div class="small-1 columns"><a class="button secondary">=</a></div>
-  	    <div class="small-1 columns"><a class="button secondary" style="width:38px">/</a></div>
+  	    <div class="small-1 columns"><a class="button secondary" ng-click="execute()">=</a></div>
+  	    <div class="small-1 columns"><a class="button secondary" style="width:38px" ng-click="opPress('divide')">/</a></div>
   	    <div class="small-1 columns"></div>
 	  </div>
 	</div>
